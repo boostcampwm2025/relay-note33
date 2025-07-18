@@ -85,8 +85,9 @@ graph TD
 
 **프롬프팅 결과**  
 
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/fe467ce7-a443-4848-bb73-478b23901ea4" />
-
+<div align=center>
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/fe467ce7-a443-4848-bb73-478b23901ea4" />
+</div>
 
 
 <br>
