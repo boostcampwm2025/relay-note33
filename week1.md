@@ -213,7 +213,10 @@ https://hooks.slack.com/services/T095HM2JESV/B0968G9BVNF/i5Mquujb6GvJvFq9t4t1lOA
 ### 잔소리 봇에 컨셉 부여하기
 
 - [남자친구 컨셉]
-  ![image.png](attachment:62f5ac50-ad89-4b93-89fa-872961ef2959:image.png)
+
+<img width="1970" height="870" alt="image" src="https://github.com/user-attachments/assets/8b6445d6-543e-4fa6-bb12-12ae00dd6cff" />
+
+
 
   ### 지수를 위한 하루 학습 플랜 📚
 
