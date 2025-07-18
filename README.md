@@ -62,8 +62,8 @@ graph TD
     style H fill:#E3F2FD,stroke:#333,stroke-width:2px
 ```
 
-예시에서는 워크플로우는 `Github Actions`, 스크립트로는 `Python`, 알림은 `Slack`을 사용했어요.  
-주어진 문제를 해결 할 수 있다면 **어떠한 다른 방법과 도구를 사용해도 괜찮아요.**   
+예시에서는 워크플로는 `Github Actions`, 스크립트로는 `Python`, 알림은 `Slack`을 사용했어요.  
+주어진 문제를 해결할 수 있다면 **어떠한 다른 방법과 도구를 사용해도 괜찮아요.**   
 
 <br>
 
