@@ -206,7 +206,7 @@ curl -X POST -H 'Content-type: application/json' \\
 https://hooks.slack.com/services/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
 ```
 
-![alt text](image-1.png)
+![alt text](image1.png)
 
 → 위는 slack webhook을 사용해 나에게 알림을 보내는 예시이고, 시간표에 맞추어 알림을 보내려면 crontab을 사용하면 된다. 이것도 시간표를 AI에게 주고 코드를 달라고 해도 좋을 것 같다!
 
