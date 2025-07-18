@@ -108,7 +108,7 @@
 
 - 코드
 
-  ```jsx
+  ```python
   from fastapi import APIRouter
   from pydantic import BaseModel
   from dotenv import load_dotenv
