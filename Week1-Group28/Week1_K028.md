@@ -19,15 +19,17 @@ AI에게 프롬프트를 만들어서 시간표를 받을 때, <br/>
 친절하게 예제에 수행에 도움될 내용들을 상세히 적어주셔서 예제를 따라 <br/>
 예제 코드를 분석한 뒤 바로 프로젝트에 의존성 주입을 시작하고 구현을 시작했습니다.
 
-![img.png](img.png)
+<img width="531" height="131" alt="img" src="https://github.com/user-attachments/assets/6c9b314d-c0c0-4fce-8404-cda09f35ea12" />
 
 바로 `OPENAI`의 `apikey`를 발급 받았고, <br/>
 `.env`파일을 생성하여 `apikey`를 저장해두었습니다. <br/>
 무료로 제공해주는 크레딧이 있어서 문제없이 사용 가능할거라 판단했습니다.
 
-![img_1.png](img_1.png)
+<img width="530" height="97" alt="img_1" src="https://github.com/user-attachments/assets/618d95fb-dba7-4ec9-8256-74cac7fcb41b" />
 
-![img_2.png](img_2.png)
+
+<img width="263" height="115" alt="img_2" src="https://github.com/user-attachments/assets/16507184-c9ad-4468-a7c9-916771fd783f" />
+
 
 `dotenv`를 사용하신 것을 보고 코틀린에도 해당 패키지가 있어서 같이 사용해봤습니다. <br/>
 올바르게 `apikey`가 불러와지는 것을 확인했습니다.
