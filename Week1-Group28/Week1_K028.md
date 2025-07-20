@@ -20,7 +20,8 @@ AI에게 프롬프트를 만들어서 시간표를 받을 때, <br/>
 친절하게 예제에 수행에 도움될 내용들을 상세히 적어주셔서 예제를 따라 <br/>
 예제 코드를 분석한 뒤 바로 프로젝트에 의존성 주입을 시작하고 구현을 시작했습니다.
 
-![img_4.png](img_4.png)
+<img width="552" height="245" alt="img_4" src="https://github.com/user-attachments/assets/2c15042b-0cf3-41b0-b089-81284b66497d" />
+
 
 - `dotenv` : `.env` 파일에서 환경변수를 쉽게 불러오는 라이브러리
 - `Ktor Client` : Kotlin의 공식 비동기 HTTP 클라이언트
@@ -33,9 +34,12 @@ AI에게 프롬프트를 만들어서 시간표를 받을 때, <br/>
 무료로 제공해주는 크레딧이 있어서 문제없이 사용 가능할거라 판단했습니다.
 
 
-![img_1.png](img_1.png)
+<img width="530" height="97" alt="img_1" src="https://github.com/user-attachments/assets/80cf4527-b0bd-496d-8183-a02f8a31b964" />
+
 <br/>
-![img_2.png](img_2.png)
+
+<img width="263" height="115" alt="img_2" src="https://github.com/user-attachments/assets/d65cac55-08d9-4002-8789-e9e74972f98c" />
+
 
 `dotenv`를 사용하신 것을 보고 코틀린에도 해당 패키지가 있어서 같이 사용해봤습니다. <br/>
 올바르게 `apikey`가 불러와지는 것을 확인했습니다.
@@ -63,7 +67,8 @@ fun main() = runBlocking {
 - 요구사항에서 `gpt-4o` 모델을 사용해달라고 하여, 해당 모델로 테스트를 진행 했습니다.
 
 #### 테스트 결과
-![img_5.png](img_5.png)
+<img width="450" height="262" alt="img_5" src="https://github.com/user-attachments/assets/7bf13b12-544b-4a28-a9dc-52a10d0ba8be" />
+
 
 정상적으로 AI 모델이 답을 반환하는 것을 확인했습니다.
 
