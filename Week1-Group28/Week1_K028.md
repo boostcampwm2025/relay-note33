@@ -24,11 +24,14 @@ AI에게 프롬프트를 만들어서 시간표를 받을 때, <br/>
 
 - `dotenv` : `.env` 파일에서 환경변수를 쉽게 불러오는 라이브러리
 - `Ktor Client` : Kotlin의 공식 비동기 HTTP 클라이언트
-
+- `kotlinx-json` :  Kotlinx JSON 직렬화 라이브러리
+- `openai` : Kotlin에서 OpenAI API 접근할 수 있도록 도와주는 클라이언트 라이브러리 (공식X)
+- `SLF4J` : 로그 관련 라이브러리
 
 바로 `OPENAI`의 `apikey`를 발급 받았고, <br/>
 `.env`파일을 생성하여 `apikey`를 저장해두었습니다. <br/>
 무료로 제공해주는 크레딧이 있어서 문제없이 사용 가능할거라 판단했습니다.
+
 
 ![img_1.png](img_1.png)
 <br/>
@@ -127,3 +130,12 @@ object Schedule {
 ```kotlin
 
 ```
+=======
+<img width="530" height="97" alt="img_1" src="https://github.com/user-attachments/assets/618d95fb-dba7-4ec9-8256-74cac7fcb41b" />
+
+
+<img width="263" height="115" alt="img_2" src="https://github.com/user-attachments/assets/16507184-c9ad-4468-a7c9-916771fd783f" />
+
+
+`dotenv`를 사용하신 것을 보고 코틀린에도 해당 패키지가 있어서 같이 사용해봤습니다. <br/>
+올바르게 `apikey`가 불러와지는 것을 확인했습니다.
