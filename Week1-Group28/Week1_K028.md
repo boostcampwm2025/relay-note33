@@ -15,19 +15,115 @@
 ### 수행내역
 AI에게 프롬프트를 만들어서 시간표를 받을 때, <br/>
 간단하게 `Chat-GPT` 같은 사이트에 직접 접속해서 간단하게 수행해도 되는 미션이지만 <br/>
-`OPENAI`를 사용한 예제를 보고, 저도 이 기회에 오픈AI를 사용하는 연습을 해야겠다 생각을 했습니다. <br/>
+`OPENAI`를 사용한 예제를 보고 리서치해 본 결과 Kotlin에도 `OPENAI` 관련 라이브러리가 있어서 <br/>
+저도 이 기회에 오픈AI를 사용하는 연습을 해야겠다 생각을 했습니다. <br/>
 친절하게 예제에 수행에 도움될 내용들을 상세히 적어주셔서 예제를 따라 <br/>
 예제 코드를 분석한 뒤 바로 프로젝트에 의존성 주입을 시작하고 구현을 시작했습니다.
 
-![img.png](img.png)
+![img_4.png](img_4.png)
+
+- `dotenv` : `.env` 파일에서 환경변수를 쉽게 불러오는 라이브러리
+- `Ktor Client` : Kotlin의 공식 비동기 HTTP 클라이언트
+
 
 바로 `OPENAI`의 `apikey`를 발급 받았고, <br/>
 `.env`파일을 생성하여 `apikey`를 저장해두었습니다. <br/>
 무료로 제공해주는 크레딧이 있어서 문제없이 사용 가능할거라 판단했습니다.
 
 ![img_1.png](img_1.png)
-
+<br/>
 ![img_2.png](img_2.png)
 
 `dotenv`를 사용하신 것을 보고 코틀린에도 해당 패키지가 있어서 같이 사용해봤습니다. <br/>
 올바르게 `apikey`가 불러와지는 것을 확인했습니다.
+
+### `OpenAI` 연동 테스트
+```kotlin
+fun main() = runBlocking {
+    val openAI = OpenAI(
+        token = api_key,
+    )
+
+    val modelId = ModelId("gpt-4o")
+
+    val completion = openAI.chatCompletion(
+        ChatCompletionRequest(
+            model = modelId,
+            messages = listOf(
+                ChatMessage(role = ChatRole.User, content = "안녕, 내 요청이 정상적으로 들어간다면 네이버부스트캠프! 라고 해줘")
+            )
+        )
+    )
+    println(completion.choices.firstOrNull()?.message?.content)
+}
+```
+- 요구사항에서 `gpt-4o` 모델을 사용해달라고 하여, 해당 모델로 테스트를 진행 했습니다.
+
+#### 테스트 결과
+![img_5.png](img_5.png)
+
+정상적으로 AI 모델이 답을 반환하는 것을 확인했습니다.
+
+### `Prompt` 작성하는 클래스 작성
+```kotlin
+import java.time.LocalDate
+import java.time.LocalTime
+import java.time.format.DateTimeFormatter
+
+object Schedule {
+
+    data class DailySchedule(
+        val userName: String,
+        val learningObjectives: List<String>,
+        val wakeTime: LocalTime,
+        val sleepTime: LocalTime,
+        val lunchTime: LocalTime,
+        val memo: String,
+    ) {
+        companion object {
+            val dailyPlan = DailySchedule(
+                userName = "K028 최동현",
+                learningObjectives = listOf("프로세스 메모리 구조", "운영체제별 메모리 관리 방식"),
+                wakeTime = LocalTime.parse("07:00"),
+                sleepTime = LocalTime.parse("03:00"),
+                lunchTime = LocalTime.parse("12:00"),
+                memo = "비전공자라 추천 학습 순서가 있으면 좋겠어."
+            )
+        }
+    }
+
+    object Prompt {
+        fun writePrompt(schedule: DailySchedule): String {
+            val today = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy년 M월 d일 (E)", java.util.Locale.KOREAN))
+            return """
+                날짜: $today
+                너는 사용자의 학습 계획을 짜주는 AI 도우미야.
+
+                사용자 정보:
+                - 이름: ${schedule.userName}
+                - 학습 목표: ${schedule.learningObjectives.joinToString(", ")}
+                - 기상 시간: ${schedule.wakeTime}
+                - 취침 시간: ${schedule.sleepTime}
+                - 점심 시간: ${schedule.lunchTime}
+                - 참고 사항: ${if (schedule.memo.isBlank()) "없음" else schedule.memo}
+
+                요청 사항:
+                - 학습 목표를 달성하기 위한 하루 일과 시간표를 촘촘하게 짜줘.
+                - 점심 시간은 1시간을 고정적으로 배치해줘.
+                - 학습목표를 어떤 식으로 학습하면 좋을지 각 시간 블록마다 무엇을 하면 좋을지 설명을 해줘.
+                - 쉬는 시간은 적절히 포함하되, 학습 집중도를 최대로 높일 수 있게 구성해줘.
+                - 말투는 친절하지만 지나치게 부드럽지 않게. 똑 부러지게 알려줘.
+
+                결과:
+                - 시간대별 할 일을 나열해줘. 보기 좋게 표처럼 정리해도 좋아.
+                - 마지막에 전체 계획을 요약하는 코멘트를 추가해줘.
+            """.trimIndent()
+        }
+    }
+}
+```
+
+### 출력 결과
+```kotlin
+
+```
