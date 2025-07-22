@@ -249,4 +249,4 @@ val concept = "감정보다는 이성과 루틴 강조하는 다정하지만 현
 
 
 ### 화요일 미션 시간표 요청
-![img_7.png](img_7.png)
+<img width="2451" height="554" alt="img_7" src="https://github.com/user-attachments/assets/67abb091-cee6-44c8-b049-fb2ab43cf891" />
