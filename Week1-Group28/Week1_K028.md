@@ -75,7 +75,7 @@ fun main() = runBlocking {
 
 정상적으로 AI 모델이 답을 반환하는 것을 확인했습니다.
 
-### `Prompt` 작성하는 클래스 작성
+### `Prompt` 작성하는 클래스
 ```kotlin
 import java.time.LocalDate
 import java.time.LocalTime
@@ -141,6 +141,7 @@ object Schedule {
 
 <img width="530" height="97" alt="img_1" src="https://github.com/user-attachments/assets/618d95fb-dba7-4ec9-8256-74cac7fcb41b" />
 
+<br/>
 
 <img width="263" height="115" alt="img_2" src="https://github.com/user-attachments/assets/16507184-c9ad-4468-a7c9-916771fd783f" />
 
@@ -224,7 +225,7 @@ val concept = "감정보다는 이성과 루틴 강조하는 다정하지만 현
 너의 컨셉은 ${concept}
 컨셉에 몰입해서 작성을 해줘.
 ```
-위 요청을 Prompt에 추가해서 컨셉을 부여했습니다.
+위 요청을 `Prompt`에 추가해서 컨셉을 부여했습니다.
 
 ### 출력 결과
 ### 하루 일과 시간표
@@ -245,3 +246,7 @@ val concept = "감정보다는 이성과 루틴 강조하는 다정하지만 현
 | 22:00 - 23:00 | 심화 탐색: 고급 메모리 관리 테마                               | 메모리 교착 상태나 페이지 교환 같은 좀 더 복잡한 개념을 탐구해봐. 추가 자료를 찾아보는 것도 추천해.          |
 | 23:00 - 01:00 | 개인 취미 및 휴식                                              | 크게 무리하지 않는 선에서, 너가 좋아하는 활동을 하며 지친 머리를 풀어줘.                                |
 | 01:00 - 03:00 | 정리 및 취침 준비                                              | 오늘의 학습을 천천히 정리하고 내일 준비를 하며 마무리하자. 리프레시한 마음으로 하루를 끝내자.              |
+
+
+### 화요일 미션 시간표 요청
+![img_7.png](img_7.png)
