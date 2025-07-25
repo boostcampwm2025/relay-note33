@@ -85,7 +85,8 @@ AI가 생성한 시간표를 가지고 하루동안 실천해본다.
 
 **선택한 이유:** 네부캠에서 구현과 학습의 간극을 찾는게 어려웠다.
 
-**결과:**
+**결과:** <img width="637" height="472" alt="1번결과" src="https://github.com/user-attachments/assets/d49fdfe0-1bed-4957-baab-a18121923172" />
+
 
 ### J058_김용휘
 
