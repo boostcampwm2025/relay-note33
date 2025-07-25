@@ -252,7 +252,9 @@ val concept = "감정보다는 이성과 루틴 강조하는 다정하지만 현
 <img width="2451" height="554" alt="img_7" src="https://github.com/user-attachments/assets/67abb091-cee6-44c8-b049-fb2ab43cf891" />
 
 ### 목요일 미션 시간표 요청
-![img_8.png](img_8.png)
+
+<img width="2060" height="723" alt="img_8" src="https://github.com/user-attachments/assets/f73d8c4c-8b37-423a-a1e0-49f919efd7bd" />
+
 
 ### 수행 후기
 아무래도 미션의 내용에 대해서 전 날에 알 수가 없다 보니 <br/>
