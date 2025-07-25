@@ -105,9 +105,11 @@ AI가 생성한 시간표를 가지고 하루동안 실천해본다.
 
 ### J220_이현빈
 
-**선택한 퀘스트:**
+**선택한 퀘스트:** 미션 1. Learning Ratio Test: 너의 스타일을 찾아봐!
 
-**선택한 이유:**
+**선택한 이유:** 학습과 구현의 비율에 대한 의문도 있었고 어떻게 해야할지 ai가 도와준다면 좋을 것  같습니다!
 
 **결과:**
+<img width="871" height="243" alt="image" src="https://github.com/user-attachments/assets/f3204b75-9dd7-45bb-ab0f-9299e00998e6" />
+
 
