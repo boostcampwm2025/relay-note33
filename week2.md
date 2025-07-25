@@ -90,11 +90,16 @@ AI가 생성한 시간표를 가지고 하루동안 실천해본다.
 
 ### J058_김용휘
 
-**선택한 퀘스트:**
+**선택한 퀘스트:** 미션 1. Learning Ratio Test: 너의 스타일을 찾아봐!
 
-**선택한 이유:**
+**선택한 이유:** 항상 과제를 수행하면서 학습에 얼마나 시간을 써야하고 구현에는 시간을 얼마나 써야할지 고민이어서 이 기회에 한번 알아보자 라는 생각으로 선택했다.
 
-**결과:**
+**결과:**  
+<img width="721" height="302" alt="img" src="https://github.com/user-attachments/assets/70f77aea-30d3-4886-b3b1-1c36f4b36a49" />
+<img width="730" height="269" alt="image" src="https://github.com/user-attachments/assets/ed260391-8a1c-423a-a0d2-b84f643a06c9" />
+<img width="720" height="240" alt="image (1)" src="https://github.com/user-attachments/assets/39fa6336-9497-4341-855c-e1af1a5252dd" />
+
+
 
 ### J061_김윤오
 
