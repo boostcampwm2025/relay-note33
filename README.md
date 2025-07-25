@@ -97,8 +97,8 @@ graph TD
 이 미션의 학습과 구현의 비중을 어떻게 잡아야 할까?
 ```
 ### 프롬프팅 결과
-<img width="803" height="584" alt="스크린샷 2025-07-25 오후 2 55 17" src="https://gist.github.com/user-attachments/assets/af6ec906-b9c2-43c9-9675-69faa8ed2ad5" />
-<img width="803" height="584" alt="스크린샷 2025-07-25 오후 2 55 25" src="https://gist.github.com/user-attachments/assets/c4667cf6-0d5f-4dfc-a195-26d81d5e702f" />
+<img width="1606" height="1168" alt="image" src="https://github.com/user-attachments/assets/2653b7e5-7859-4c22-b542-d79376c033cd" />
+<img width="1606" height="1168" alt="image" src="https://github.com/user-attachments/assets/1d038483-895c-45c9-b388-251253436361" />
 
 
 
