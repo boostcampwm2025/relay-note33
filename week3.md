@@ -412,3 +412,7 @@ Index가 어떤 구조여야 할지 잘 모르겠고 이전 Tree 구조랑도 �
 <img width="1190" height="615" alt="3" src="https://github.com/user-attachments/assets/5d5e6e49-7da0-4287-adfc-e1ab92613826" />
 <img width="1190" height="615" alt="4" src="https://github.com/user-attachments/assets/1cd61f0e-6f03-4142-bd47-3628caec3374" />
 
+**느낀 점**
+- 수면 부채가 생각보다 많아서 놀랐다. 많이 잤다고 생각했는데 아니었다.
+- 밤을 더 많이 새신 다른 분들은 정말 어떻게 버티신걸까.
+- 추천해준걸 염두에 두고 주말에 잠을 잘 자봐야겠다.
